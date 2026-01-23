@@ -1,0 +1,30 @@
+// link:https://codeforces.com/group/MWSDmqGsZm/contest/223206/problem/M
+#include <iostream>
+#include<cmath>
+#include<algorithm>
+using namespace std;
+int main()
+{
+    int a, b, c;
+    cin >> a >> b >> c;
+    int smallest, largest;
+    if (a < b && a < c) {
+        smallest = a;
+    }
+    else if (b < a && b < c) {
+        smallest = b;
+    }
+    else {
+        smallest = c;
+    }
+    if (a > b && a > c) {
+        largest = a;
+    }
+    else if (b > a && b > c) {
+        largest = b;
+    }
+    else {
+        largest = c;
+    }
+    cout << largest - smallest << '\n';
+}
